@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class Volume : MonoBehaviour
 {
-    public void Value(float value)
+    public void ValueDisplay(float value)
     {
-        GetComponent<Text>().text = (value*100).ToString();
+        GetComponent<Text>().text = (Mathf.Floor(value*100)).ToString();
     }
 }
